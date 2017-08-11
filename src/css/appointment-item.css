@@ -193,6 +193,7 @@ body {
 }
 .appointment-item-container {
   padding: 0.75rem;
+  padding-bottom: 2.2rem;
 }
 .appointment-item-container .appointment-list {
   background: #fff;
@@ -257,4 +258,60 @@ body {
   background-image: -webkit-linear-gradient(left, #d32e12, #f83f20);
   background-image: linear-gradient(to right, #d32e12, #f83f20);
   color: #fff;
+}
+.common-nav {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  height: 1.7rem;
+  padding: 0.25rem 0;
+  z-index: 999;
+  -webkit-box-shadow: 1px 1px 5px rgba(6, 0, 1, 0.25);
+  box-shadow: 1px 1px 5px rgba(6, 0, 1, 0.25);
+  background: #fff;
+}
+.common-nav .common-nav-list {
+  float: left;
+  width: 25%;
+  height: 1.7rem;
+  text-align: center;
+}
+.common-nav .common-nav-list .nav-link {
+  color: #999;
+}
+.common-nav .common-nav-list .caption {
+  font-size: 0.45rem;
+  margin-top: 0.125rem;
+}
+.common-nav .common-nav-list .icon-nav {
+  display: inline-block;
+  width: 1.1rem;
+  height: 1.1rem;
+  background: url(../images/icon-nav.png) no-repeat;
+  background-size: 4.4rem 2.2rem;
+  vertical-align: middle;
+  border-radius: 50%;
+  overflow: hidden;
+}
+.common-nav .common-nav-list .icon-nav.icon-nav2 {
+  background-position: -1.1rem 0;
+}
+.common-nav .common-nav-list .icon-nav.icon-nav3 {
+  background-position: -2.2rem 0;
+}
+.common-nav .common-nav-list .icon-nav.icon-nav4 {
+  background-position: -3.3rem 0rem;
+}
+.common-nav .common-nav-list.active .icon-nav1 {
+  background-position: 0 -1.1rem;
+}
+.common-nav .common-nav-list.active .icon-nav2 {
+  background-position: -1.1rem -1.1rem;
+}
+.common-nav .common-nav-list.active .icon-nav3 {
+  background-position: -2.2rem -1.1rem;
+}
+.common-nav .common-nav-list.active .icon-nav4 {
+  background-position: -3.3rem -1.1rem;
 }

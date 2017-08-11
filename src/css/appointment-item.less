@@ -4,6 +4,7 @@ body{
 }
 .appointment-item-container{
     padding: 30/@rem;
+    padding-bottom: 88/@rem;
     .appointment-list{
         background: #fff;
         border-radius: 4px;
@@ -63,6 +64,64 @@ body{
                     background-image: linear-gradient(to right, #d32e12, #f83f20);
                     color: #fff;
                 }
+            }
+        }
+    }
+}
+.common-nav{
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    height: 68/@rem;
+    padding: 10/@rem 0;
+    z-index: 999;
+    -webkit-box-shadow: 1px 1px 5px rgba(6,0,1,.25);
+    box-shadow: 1px 1px 5px rgba(6,0,1,.25);
+    background: #fff;
+    .common-nav-list{
+        float: left;
+        width: 25%;
+        height: 68/@rem;
+        text-align:center;
+        .nav-link{
+            color: #999;
+        }
+        .caption{
+            font-size: 18/@rem;
+            margin-top: 5/@rem;
+        }
+        .icon-nav{
+            display: inline-block;
+            width: 44/@rem;
+            height: 44/@rem;
+            background: url(../images/icon-nav.png) no-repeat;
+            background-size: 176/@rem 88/@rem;
+            vertical-align: middle;
+            border-radius: 50%;
+            overflow: hidden;
+            &.icon-nav2{
+                background-position: -44/@rem 0;
+            }
+            &.icon-nav3{
+                background-position: -88/@rem 0;
+            }
+            &.icon-nav4{
+                background-position: -132/@rem 0/@rem;
+            }
+        }
+        &.active{
+            .icon-nav1{
+                background-position: 0 -44/@rem;
+            }
+            .icon-nav2{
+                background-position: -44/@rem -44/@rem;
+            }
+            .icon-nav3{
+                background-position: -88/@rem -44/@rem;
+            }
+            .icon-nav4{
+                background-position: -132/@rem -44/@rem;
             }
         }
     }

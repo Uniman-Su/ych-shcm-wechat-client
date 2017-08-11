@@ -179,6 +179,7 @@ $('.icon-close,.pay-dialog-btn.btn1').click(function(){
 })
 $('.pay-dialog-btn.btn2').click(function(){
 	//确认服务
+	loading.load();
 	var token = sessionStorage.getItem('token');
 	$.ajax({
 		type:"post",
@@ -191,6 +192,7 @@ $('.pay-dialog-btn.btn2').click(function(){
 			orderId:orderId,
 		},
 		success:function(data){
+			loading.removeLoad();
 			if(data.result =="Succeeded"){
 				//确认服务成功后
 				location.href="record.html";
