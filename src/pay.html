@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no">
+		<meta name="apple-mobile-web-app-capable" content="yes" />
+		<meta name="apple-mobile-web-app-status-bar-style" content="black" />
+		<meta name="format-detection" content="telephone=no, email=no" />
+		<title>支付</title>
+	</head>
+	<body touchstart="" style="background: #f2f4f5;">
+		<div class="pay-banner">
+			<img class="pay-banner-pic" src="images/pay-banner.jpg"  />
+		</div>
+		<div class="pay-method">
+			<ul class="clear">
+				<li class="pay-list active">
+					<img class="pay-list-pic" src="images/pay-list-pic.png" />
+					<div class="pay-content">
+						<h3 class="title">微信支付</h3>
+						<p class="text">推荐安装微信5.0及以上版本的使用</p>
+					</div>
+				</li>
+			</ul>
+		</div>	
+		<div class="pay-btn">
+			<a id="submit" href="javascript:;">立即支付</a>
+		</div>	
+		
+		<div id="dialog2" class="dialog">
+			<div class="pay-dialog-content">
+				<div class="pay-dialog-title">
+					提示
+					<a class="icon-close" href="javascript:;" ></a>
+				</div>	
+				<div class="pay-dialog-main">
+					<img class="pay-dialog-pic" src="images/msg.png" />
+					<p class="pay-main-info info1">对不起，暂时没有查询到您的支付记录，请稍后关注，或联系支付方式确认。</p>
+					<div class="pay-dialog-btn-group">
+						<a id="pay-btn2" class="pay-dialog-btn btn1">返回</a>
+					</div>	
+				</div>	
+			</div>	
+		</div>
+		
+		<div id="dialog1" class="dialog">
+			<div class="pay-dialog-content">
+				<div class="pay-dialog-title">
+					提示
+					<a class="icon-close" href="javascript:;" ></a>
+				</div>	
+				<div class="pay-dialog-main">
+					<img class="pay-dialog-pic" src="images/msg.png" />
+					<p class="pay-main-info">亲，支付是否支付成功?</p>
+					<div class="pay-dialog-btn-group">
+						<a id="pay-btn" class="pay-dialog-btn btn1">稍后支付</a>
+						<a id="pay-btn1" class="pay-dialog-btn btn2">支付成功</a>
+					</div>	
+				</div>	
+			</div>	
+		</div>
+		<script src="http://res.wx.qq.com/open/js/jweixin-1.2.0.js"></script>
+	</body>
+</html>

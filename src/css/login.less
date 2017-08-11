@@ -1,0 +1,56 @@
+@import './common.less';
+.login-container{
+    padding: 30/@rem;
+    .input{
+        position: relative;
+        .icon-close{
+            display: none;
+            position: absolute;
+            width: 30/@rem;
+            height: 30/@rem;
+            background: url(../images/close.png) no-repeat;
+            background-size: 100% 100%;
+            right: 30/@rem;
+            top: 25/@rem;
+        }
+    }
+    input{
+        display: block;
+        width: 100%;
+        height: 80/@rem;
+        border-radius: 40px;
+        box-sizing: border-box;
+        border: 1px solid @border-color;
+        margin-bottom: 20/@rem;
+        font-size: 28/@rem;
+        text-indent: 80/@rem;
+        &.username{
+            background: url(../images/icon-user.png) no-repeat;
+            background-size: 21/@rem 30/@rem;
+            background-position: 50/@rem 22/@rem;
+        }
+        &.password{
+            background: url(../images/icon-pass.png) no-repeat;
+            background-size: 19/@rem 30/@rem;
+            background-position: 50/@rem 22/@rem;
+        }
+        &::-webkit-input-placeholder{
+            font-family: "微软雅黑";
+        }
+    }
+    .login-btn{
+        display: block;
+        height: 80/@rem;
+        line-height: 80/@rem;
+        text-align: center;
+        font-size: 30/@rem;
+        color: #fff;
+        margin-top: 10/@rem;
+        border-radius: 40px;
+        -webkit-box-shadow: 0 1px 5px rgba(6,0,1,.2);
+        box-shadow: 0 1px 5px rgba(6,0,1,.2);
+        background-image: -webkit-linear-gradient(left, #d32e12, #f83f20);
+        background-image: -ms-linear-gradient(left, #d32e12, #f83f20);
+        background-image: linear-gradient(to right, #d32e12, #f83f20);
+    }
+}

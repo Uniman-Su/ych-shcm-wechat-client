@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no">
+		<meta name="apple-mobile-web-app-capable" content="yes" />
+		<meta name="apple-mobile-web-app-status-bar-style" content="black" />
+		<meta name="format-detection" content="telephone=no, email=no" />
+		<title>订单详情</title>
+	</head>
+	<body>
+		<header class="car-info">
+			<div class="car-info-container clear">
+				<img class="car-info-pic" src="" />
+				<div class="car-info-main">
+					<h3 class="car-info-title"></h3>
+					<p class="car-info-text"></p>
+				</div>
+			</div>
+		</header>
+		<footer class="kp-foot">
+			<a id="kp-btn" class="kp-btn btn1" href="javascript:;">开票申请</a>
+			<a class="kp-btn btn2" href="javascript:;">确认服务</a>
+		</footer>
+		<div class="store-list">
+			<a href="storeDetails.html">
+				<h3 class="title">
+					<em id="name" class="caption"></em>
+				</h3>
+				<div class="store-content clear">
+					<img id="imagePath" class="store-list-pic" src="" />
+					<div class="store-list-info">
+						<p id="address" class="store-list-text"></p>
+						<span id="star" class="star-component">
+							<span class="star"></span>
+							<span class="star"></span>
+							<span class="star"></span>
+							<span class="star"></span>
+							<span class="star"></span>
+						</span>
+						<span id="score" class="score"></span>
+						<em id="comments" class="comments"></em>
+					</div>
+				</div>
+			</a>
+			<i class="icon-right"></i>
+		</div>
+		<div class="service-price">
+			<ul class="time-details">
+				<li id="createTime" class="time-details-list">
+					购买时间
+					<span class="fr"></span>
+				</li>
+				<li id="effectTime" class="time-details-list">
+					服务时间
+					<span class="fr"></span>
+				</li>
+				<li id="status" class="time-details-list">
+					状态
+					<span class="fr"></span>
+				</li>
+			</ul>
+			<h3 class="total-price">套餐价: <span class="price-logo">&yen;</span><span id="money"></span></h3>
+			<ul class="price-details">
+			</ul>
+		</div>	
+		
+		<div class="dialog">
+			<div class="pay-dialog-content">
+				<div class="pay-dialog-title">
+					提示
+					<a class="icon-close" href="javascript:;" ></a>
+				</div>	
+				<div class="pay-dialog-main">
+					<img class="pay-dialog-pic" src="images/msg.png" />
+					<p class="pay-main-info">请确认汽修厂已完成对您的服务，否则您可能钱财两空</p>
+					<div class="pay-dialog-btn-group">
+						<a class="pay-dialog-btn btn1">返回</a>
+						<a class="pay-dialog-btn btn2">确认</a>
+					</div>	
+				</div>	
+			</div>	
+		</div>
+	</body>
+</html>

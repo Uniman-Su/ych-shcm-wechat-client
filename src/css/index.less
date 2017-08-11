@@ -1,0 +1,209 @@
+@import './common.less';
+.car-info{
+    height: 71/@rem;
+    padding: 22/@rem 31/@rem;
+    background: #f1f2f8;
+    border-bottom: 1px solid @border-color;
+    .car-info-container{
+        position: relative;
+        .icon-right{
+            position: absolute;
+            right: 0;
+            top: 25/@rem;
+        }
+    }
+    .car-info-pic{
+        display: inline-block;
+        width: 49/@rem;
+        height: 49/@rem;
+        padding: 10/@rem;
+        background: #fff;
+        border: 1px solid @border-color;
+        border-radius: 50%;
+        overflow: hidden;
+        float: left;
+    }
+    .car-info-main{
+        margin-left: 84/@rem;
+        height: 100%;
+        .car-info-title{
+            font-size: 26/@rem;
+            color: #333;
+            .ellipsis();
+        }
+        .car-info-text{
+            font-size: 22/@rem;
+            color: #999;
+            margin-top: 10/@rem;
+            .ellipsis();
+        }
+    }
+}
+.car-info.error{
+    display: none;
+    .car-info-pic{
+        display: inline-block;
+        width: 82/@rem;
+        height: 71/@rem;
+        margin-top: -10/@rem;
+        background: transparent;
+        border: none;
+        border-radius: 0;
+        overflow: hidden;
+        float: left;
+    }
+    .car-info-main{
+        margin-left: 110/@rem;
+    }
+}
+.common-nav{
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    height: 68/@rem;
+    padding: 10/@rem 0;
+    z-index: 999;
+    -webkit-box-shadow: 1px 1px 5px rgba(6,0,1,.25);
+    box-shadow: 1px 1px 5px rgba(6,0,1,.25);
+    background: #fff;
+    .common-nav-list{
+        float: left;
+        width: 25%;
+        height: 68/@rem;
+        text-align:center;
+        .nav-link{
+            color: #999;
+        }
+        .caption{
+            font-size: 18/@rem;
+            margin-top: 5/@rem;
+        }
+        .icon-nav{
+            display: inline-block;
+            width: 44/@rem;
+            height: 44/@rem;
+            background: url(../images/icon-nav.png) no-repeat;
+            background-size: 176/@rem 88/@rem;
+            vertical-align: middle;
+            border-radius: 50%;
+            overflow: hidden;
+            &.icon-nav2{
+                background-position: -44/@rem 0;
+            }
+            &.icon-nav3{
+                background-position: -88/@rem 0;
+            }
+            &.icon-nav4{
+                background-position: -132/@rem 0/@rem;
+            }
+        }
+        &.active{
+            .icon-nav1{
+                background-position: 0 -44/@rem;
+            }
+            .icon-nav2{
+                background-position: -44/@rem -44/@rem;
+            }
+            .icon-nav3{
+                background-position: -88/@rem -44/@rem;
+            }
+            .icon-nav4{
+                background-position: -132/@rem -44/@rem;
+            }
+        }
+    }
+}
+.order-nav{
+    height: 67/@rem;  
+    padding: 30/@rem;
+    border-bottom: 1px solid @border-color;  
+    .order-nav-list{
+        position: relative;
+        float: left;
+        width: 25%;
+        height: 100%;
+        text-align: center;
+        .order-nav-caption{
+            margin-top: 10/@rem;
+            font-size: 24/@rem;
+            color: #999;
+        }
+        .badge{
+            display: none;
+            position: absolute;
+            width: 36/@rem;
+            height: 36/@rem;
+            line-height: 36/@rem;
+            //padding: 9.5/@rem 0;
+            text-align: center;
+            font-size: 16/@rem;
+            color: #fff;
+            background: #fe4747;
+            border-top-left-radius: 999px; /* 左上角 */
+            border-top-right-radius: 999px; /* 右上角 */
+            border-bottom-right-radius: 999px; /* 右下角 */
+            border-bottom-left-radius: 999px; /* 左下角 */
+            border-radius: 999px;
+            background-clip: padding-box;
+            overflow: hidden;
+            box-sizing: border-box;
+            top: -20/@rem;
+            left: 55%;
+            &.active{
+                display: block;
+            }
+        }
+    }
+}
+.icon-order{
+    display: inline-block;
+    width: 34/@rem;
+    height: 34/@rem;
+    background: url(../images/icon-order.png) no-repeat;
+    background-size: 146/@rem 35/@rem;
+    vertical-align: middle;
+    overflow: hidden;
+    &.icon-order2{
+        background-position: -36/@rem 0;
+    }
+    &.icon-order3{
+        background-position: -72/@rem 0;
+    }
+    &.icon-order4{
+        width: 36/@rem;
+        background-position: -107/@rem 0;
+    }
+}
+.index-banner-container{
+    position: relative;
+    .index-banner{
+        width: 100%;
+    }
+}
+.index-btn-container{
+    padding: 40/@rem 0;
+    text-align: center;
+    margin-top: -150/@rem;
+    position: relative;
+    z-index: 9;
+    .index-btn{
+        display: inline-block;
+        width: 220/@rem;
+        height: 80/@rem;
+        line-height: 78/@rem;
+        text-align: center;
+        font-size: 30/@rem;
+        color: #fff;
+        border-radius: 50px;
+        -webkit-box-shadow: 0 1px 5px rgba(6,0,1,.2);
+        box-shadow: 0 1px 5px rgba(6,0,1,.2);
+        background-image: -webkit-linear-gradient(left, #fd5119, #fb7439);
+        background-image: linear-gradient(to right, #fd5119, #fb7439);
+        &:last-child{
+            margin-left: 20/@rem;
+            background-image: -webkit-linear-gradient(left, #d32e12, #f83f20);
+            background-image: linear-gradient(to right, #d32e12, #f83f20);
+        }
+    }
+}

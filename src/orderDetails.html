@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no">
+		<meta name="apple-mobile-web-app-capable" content="yes" />
+		<meta name="apple-mobile-web-app-status-bar-style" content="black" />
+		<meta name="format-detection" content="telephone=no, email=no" />
+		<title>订单详情</title>
+	</head>
+	<body>
+		<header class="car-info">
+			<div class="car-info-container clear">
+				<img class="car-info-pic" src="" />
+				<div class="car-info-main">
+					<h3 class="car-info-title"></h3>
+					<p class="car-info-text"></p>
+				</div>
+			</div>
+		</header>
+		<div class="service-price">
+			<ul class="time-details">
+				<li id="createTime" class="time-details-list">
+					购买时间
+					<span class="fr"></span>
+				</li>
+				<li class="time-details-list">
+					服务时间
+					<span class="fr">未开始服务</span>
+				</li>
+				<li class="time-details-list">
+					状态
+					<span class="fr">未支付</span>
+				</li>
+			</ul>
+			<h3 class="total-price">套餐价: <span class="price-logo">&yen;</span><span id="money"></span></h3>
+			<ul class="price-details">
+			</ul>
+			<div class="price-pay-btn-content">
+				<a class="price-pay-btn btn1" href="javascript:;" >取消订单</a>
+				<a id="pay-btn" class="price-pay-btn btn2" href="javascript:;" >去支付</a>
+			</div>	
+		</div>	
+		
+		
+		<div class="dialog">
+			<div class="pay-dialog-content">
+				<div class="pay-dialog-title">
+					提示
+					<a class="icon-close" href="javascript:;" ></a>
+				</div>	
+				<div class="pay-dialog-main">
+					<img class="pay-dialog-pic" src="images/msg.png" />
+					<p class="pay-main-info">请确认是否需要取消订单？</p>
+					<div class="pay-dialog-btn-group">
+						<a class="pay-dialog-btn btn1">再看看</a>
+						<a id="cancel" class="pay-dialog-btn btn2">是</a>
+					</div>	
+				</div>	
+			</div>	
+		</div>
+	</body>
+</html>

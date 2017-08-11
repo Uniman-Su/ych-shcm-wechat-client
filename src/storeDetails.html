@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no">
+		<meta name="apple-mobile-web-app-capable" content="yes" />
+		<meta name="apple-mobile-web-app-status-bar-style" content="black" />
+		<meta name="format-detection" content="telephone=no, email=no" />
+		<title>保养门店</title>
+	</head>
+	<body>
+		<header class="details-nav">
+			<a class="details-nav-list active" href="javascript:;">详情介绍</a>
+			<a class="details-nav-list" href="javascript:;">用户评价</a>
+		</header>
+		<footer id="appointment" class="next-foot">
+			<a href="javascript:;">预约门店</a>
+		</footer>
+		<div class="details-container">
+			<div class="detials-container-list active">
+				<div class="store-banner-box">
+				<div class="swiper-container">
+				    <div id="shopImage" class="swiper-wrapper">
+				        <!--<div class="swiper-slide">
+				        	<img src="images/store-banner.jpg" />
+				        </div>
+				        <div class="swiper-slide">
+				        	<img src="images/store-banner.jpg" />
+				        </div>
+				        <div class="swiper-slide">
+				        	<img src="images/store-banner.jpg" />
+				        </div>-->
+				    </div>
+				    <!-- 如果需要分页器 -->
+				    <div class="swiper-pagination"></div>
+				</div>
+				</div>
+				<div class="store-info">
+					<div class="store-info-container">
+						<h3 id="name" class="title"></h3>
+						<p id="address" class="text"></p>
+						<p class="tel">联系电话：<span id="phone"></span></p>
+						<a class="navigation" href="javascript:;"></a>
+					</div>	
+				</div>	
+				<div class="details-caption-container">
+					<p id="desc" class="details-caption"></p>
+				</div>
+			</div>	
+			<div class="detials-container-list">
+				<!--<ul class="detials-comments">
+					<li class="details-comments-list">
+						<p>服务态度</p>
+						<span>5.00</span>
+					</li>
+					<li class="details-comments-list">
+						<p>技能能力</p>
+						<span>5.00</span>
+					</li>
+					<li class="details-comments-list">
+						<p>店面环境</p>
+						<span>5.00</span>
+					</li>
+					<li class="details-comments-list">
+						<p>服务效率</p>
+						<span>5.00</span>
+					</li>
+				</ul>-->
+				<ul class="user-comments">
+					<!--<li class="user-comments-list clear">
+						<img class="user-comments-pic" src="images/user.png" />
+						<div class="user-comments-info">
+							<h3 class="title">奔驰S500车主</h3>
+							<dl class="dl">
+								<dt>态度:</dt>
+								<dd>5.0</dd>
+								<dt>能力:</dt>
+								<dd>4.0</dd>
+								<dt>环境:</dt>
+								<dd>3.0</dd>
+								<dt>效率:</dt>
+								<dd>4.0</dd>
+							</dl>
+							<p class="text">服务很不错，下次还去这家店。</p>
+						</div>
+					</li>
+					<li class="user-comments-list clear">
+						<img class="user-comments-pic" src="images/user.png" />
+						<div class="user-comments-info">
+							<h3 class="title">奔驰S500车主</h3>
+							<dl class="dl">
+								<dt>态度:</dt>
+								<dd>5.0</dd>
+								<dt>能力:</dt>
+								<dd>4.0</dd>
+								<dt>环境:</dt>
+								<dd>3.0</dd>
+								<dt>效率:</dt>
+								<dd>4.0</dd>
+							</dl>
+							<p class="text">服务很不错，下次还去这家店。</p>
+						</div>
+					</li>
+					<li class="user-comments-list clear">
+						<img class="user-comments-pic" src="images/user.png" />
+						<div class="user-comments-info">
+							<h3 class="title">奔驰S500车主</h3>
+							<dl class="dl">
+								<dt>态度:</dt>
+								<dd>5.0</dd>
+								<dt>能力:</dt>
+								<dd>4.0</dd>
+								<dt>环境:</dt>
+								<dd>3.0</dd>
+								<dt>效率:</dt>
+								<dd>4.0</dd>
+							</dl>
+							<p class="text">服务很不错，下次还去这家店。</p>
+						</div>
+					</li>
+					<li class="user-comments-list clear">
+						<img class="user-comments-pic" src="images/user.png" />
+						<div class="user-comments-info">
+							<h3 class="title">奔驰S500车主</h3>
+							<dl class="dl">
+								<dt>态度:</dt>
+								<dd>5.0</dd>
+								<dt>能力:</dt>
+								<dd>4.0</dd>
+								<dt>环境:</dt>
+								<dd>3.0</dd>
+								<dt>效率:</dt>
+								<dd>4.0</dd>
+							</dl>
+							<p class="text">服务很不错，下次还去这家店。</p>
+						</div>
+					</li>
+					<li class="user-comments-list clear">
+						<img class="user-comments-pic" src="images/user.png" />
+						<div class="user-comments-info">
+							<h3 class="title">奔驰S500车主</h3>
+							<dl class="dl">
+								<dt>态度:</dt>
+								<dd>5.0</dd>
+								<dt>能力:</dt>
+								<dd>4.0</dd>
+								<dt>环境:</dt>
+								<dd>3.0</dd>
+								<dt>效率:</dt>
+								<dd>4.0</dd>
+							</dl>
+							<p class="text">服务很不错，下次还去这家店。</p>
+						</div>
+					</li>-->
+				</ul>
+			</div>
+		</div>	
+		<script src="http://res.wx.qq.com/open/js/jweixin-1.2.0.js"></script>
+	</body>
+</html>

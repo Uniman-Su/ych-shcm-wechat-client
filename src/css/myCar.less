@@ -1,0 +1,49 @@
+@import './common.less';
+body{
+    background: #f2f4f5;
+}
+.car-container{
+    padding: 30/@rem;
+    padding-bottom: 0;
+    .car-list{
+        padding: 30/@rem;
+        height: 72/@rem;
+        margin-bottom: 20/@rem;
+        border-radius: 5px;
+        -webkit-box-shadow: 0 0 5px rgba(0,0,0,.1);
+        box-shadow: 0 0 5px rgba(0,0,0,.1);
+        background: #fff;
+        cursor: pointer;
+        &.active{
+            background: #fff url(../images/select1.png) no-repeat;
+            background-size: 32/@rem 32/@rem;
+            background-position: 95% center;
+        }
+        .car-pic{
+            display: inline-block;
+            float: left;
+            width: 70/@rem;
+            height: 70/@rem;
+            box-sizing: border-box;
+            border: 1px solid @border-color;
+            padding: 10/@rem;
+            border-radius: 50%;
+            overflow: hidden;
+        }
+        .car-content{
+            margin-left: 80/@rem;
+            margin-right: 50/@rem;
+            .title{
+                font-size: 26/@rem;
+                line-height: 40/@rem;
+                color: #333;
+            }
+            .info{
+                font-size: 22/@rem;
+                line-height: 36/@rem;
+                color: #999;
+                .ellipsis();
+            }
+        }
+    }
+}

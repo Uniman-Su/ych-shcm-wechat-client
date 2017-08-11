@@ -1,0 +1,195 @@
+@import './common.less';
+body{
+    background: #f2f4f5;
+}
+.car-info{
+    height: 71/@rem;
+    padding: 22/@rem 31/@rem;
+    background: #f1f2f8;
+    border-bottom: 1px solid @border-color;
+    .car-info-pic{
+        display: inline-block;
+        width: 49/@rem;
+        height: 49/@rem;
+        padding: 10/@rem;
+        background: #fff;
+        border: 1px solid @border-color;
+        border-radius: 50%;
+        overflow: hidden;
+        float: left;
+    }
+    .car-info-main{
+        margin-left: 84/@rem;
+        height: 100%;
+        .car-info-title{
+            font-size: 26/@rem;
+            color: #333;
+            .ellipsis();
+        }
+        .car-info-text{
+            font-size: 22/@rem;
+            color: #999;
+            margin-top: 10/@rem;
+            .ellipsis();
+        }
+    }
+}
+.service-price{
+    .total-price{
+        padding: 0 30/@rem;
+        height: 80/@rem;
+        line-height: 80/@rem;
+        background: #f2f4f5;
+        font-size: 26/@rem;
+        color: #d32e12;
+        text-align: right;
+    }
+    .price-details-list{
+        height: 80/@rem;
+        line-height: 80/@rem;
+        box-sizing: border-box;
+        padding: 0 30/@rem;
+        border-bottom: 1px solid @border-color;
+        font-size: 24/@rem;
+        color: #333;
+        background: #fff;
+        .price-icon{
+            display: inline-block;
+            overflow: hidden;
+            vertical-align: middle;
+            margin-top: -5/@rem;
+            margin-right: 10/@rem;
+            width: 20/@rem;
+        }
+        span{
+            float: left;
+        }
+    }
+    .time-details-list{
+        height: 80/@rem;
+        line-height: 80/@rem;
+        box-sizing: border-box;
+        padding: 0 30/@rem;
+        border-bottom: 1px solid @border-color;
+        font-size: 24/@rem;
+        color: #333;
+        background: #fff;
+        &:last-child{
+            border: none;
+        }
+    }
+}
+.price-pay-btn-content{
+    padding: 30/@rem;
+    text-align: right;
+    .price-pay-btn{
+        display: inline-block;
+        width: 180/@rem;
+        height: 60/@rem;
+        line-height: 60/@rem;
+        text-align: center;
+        border-radius: 50px;
+        box-sizing: border-box;
+        font-size: 24/@rem;
+        &.btn1{
+            border: 1px solid #D32E12;
+            color: #D32E12;
+            margin-right: 20/@rem;
+            background: #fff;
+        }
+        &.btn2{
+            color: #fff;
+            background-image: -webkit-linear-gradient(left, #d32e12, #f83f20);
+            background-image: linear-gradient(to right, #d32e12, #f83f20);
+        }
+    }
+}
+.pay-dialog-content{
+    position: absolute;
+    width: 384/@rem;
+    background: #fff;
+    padding: 30/@rem;
+    left: 50%;
+    top: 50%;
+    border-radius: 5px;
+    -webkit-transform: translate3d(-50%,-50%,0);
+    transform: translate3d(-50%,-50%,0);
+    .pay-dialog-title{
+        font-size: 24/@rem;
+        padding-bottom: 25/@rem;
+        color: #666;
+        .icon-close{
+            display: inline-block;
+            float: right;
+            width: 30/@rem;
+            height: 30/@rem;
+            background: url(../images/close.png) no-repeat;
+            background-size: 100% 100%;
+            &:active{
+                background: url(../images/close1.png) no-repeat;
+                background-size: 100% 100%;
+            }
+        }
+    }
+    .pay-dialog-main{
+        padding-top: 30/@rem;
+        border-top: 1px solid @border-color;
+        text-align: center;
+        .pay-dialog-pic{
+            width: 124/@rem;
+            margin-bottom: 20/@rem;
+        }
+        .pay-main-info{
+            font-size: 25/@rem;
+            line-height: 36/@rem;
+            color: #333;
+            &.info1{
+                text-align: left;
+            }
+        }
+        .pay-dialog-btn-group{
+            padding-top: 20/@rem;
+            .pay-dialog-btn{
+                display: inline-block;
+                width: 160/@rem;
+                height: 60/@rem;
+                box-sizing: border-box;
+                border-radius: 50px;
+                line-height: 60/@rem;
+                font-size: 24/@rem;
+                &.btn1{
+                    border: 1px solid #d32e12;
+                    color: #d32e12;
+                }
+                &.btn2{
+                    color: #fff;
+                    margin-left: 10/@rem;
+                    -webkit-box-shadow: 0 1px 5px rgba(6, 0, 1, 0.2);
+                    box-shadow: 0 1px 5px rgba(6, 0, 1, 0.2);
+                    background-image: -webkit-linear-gradient(left, #d32e12, #f83f20);
+                    background-image: linear-gradient(to right, #d32e12, #f83f20);
+                }
+            }
+        }
+    }
+}
+.kp-foot{
+    position: fixed;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    height: 80/@rem;
+    z-index: 99;
+    background-color: #fff;
+    -webkit-box-shadow: 1px 0 5px rgba(6,0,1,.2);
+    box-shadow: 1px 0 5px rgba(6,0,1,.2);
+    .kp-btn{
+        display: inline-block;
+        float: left;
+        width: 100%;
+        line-height: 80/@rem;
+        text-align: center;
+        font-size: 30/@rem;
+        color: #D32E12;
+    }
+}

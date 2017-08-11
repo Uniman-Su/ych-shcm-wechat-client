@@ -1,0 +1,161 @@
+@charset "utf-8";
+html,
+body {
+	font: 16px/1.25 -apple-system, BlinkMacSystemFont, "PingFang SC","Helvetica Neue",STHeiti,"Microsoft Yahei",Tahoma,Simsun,sans-serif;
+	color: #404040;
+	min-width: 320px;
+	-webkit-text-size-adjust: 100% !important;
+	-ms-text-size-adjust: 100% !important;
+}
+
+*{
+	-webkit-tap-highlight-color: transparent;
+}
+/*当样式表里font-size<12px时，中文版chrome浏览器里字体显示仍为12px，这时可以用 html{-webkit-text-size-adjust:none;}*/
+
+html,
+body,
+div,
+ol,
+ul,
+li,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+span,
+a,
+img,
+table,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+dl,
+dd,
+form,
+iframe,
+input,
+textarea,
+select,
+label,
+article,
+figcaption,
+details,
+canvas,
+aside,
+footer,
+header,
+menu,
+nav,
+section,
+time,
+audio,
+video,
+figure,
+hgroup {
+	margin: 0;
+	padding: 0;
+}
+html{
+	margin: 0 auto;
+}
+article,
+aside,
+canvas,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section,
+summary {
+	display: block;
+}
+
+button,
+input,
+select,
+textarea {
+	font-size: 100%;
+	vertical-align: middle;
+	outline: none;
+}
+
+input,
+textarea {
+	outline: none;
+	border: 0;
+}
+
+textarea {
+	resize: none;
+	border: solid 1px #ccc
+}
+
+img {
+	vertical-align: middle;
+	border: 0;
+	-webkit-touch-callout:none;/*禁用长按页面时填出菜单,ios下*/
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	font-size: 100%;
+	font-weight: normal;
+}
+
+ul,
+ol {
+	list-style: none;
+}
+
+a {
+	text-decoration: none;
+	-webkit-tap-highlight-color: transparent;
+	-webkit-touch-callout:none;/*禁用长按页面时填出菜单,ios下*/
+}
+
+em {
+	font-style: normal;
+}
+
+li a,
+nav a {
+	display: block;
+}
+
+form {
+	display: inline
+}
+
+table {
+	border-collapse: collapse;
+	border-spacing: 0
+}
+.center {
+	text-align: center;
+}
+
+.clear:after {
+	content: "";
+	display: block;
+	height: 0;
+	clear: both;
+	visibility: hidden;
+}
+.fr{
+	float: right;
+}

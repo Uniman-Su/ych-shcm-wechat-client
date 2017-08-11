@@ -1,0 +1,69 @@
+@import './common.less';
+body{
+    background: #f2f4f5;
+}
+.appointment-item-container{
+    padding: 30/@rem;
+    .appointment-list{
+        background: #fff;
+        border-radius: 4px;
+        padding: 30/@rem;
+        margin-bottom: 30/@rem;
+        .title{
+            font-size: 26/@rem;
+            line-height: 36/@rem;
+            color: #68acf5;
+            margin-bottom: 5/@rem;
+        }
+        p{
+            font-size: 22/@rem;
+            line-height: 32/@rem;
+            color: #666;
+            text-indent: 30/@rem;
+            .ellipsis();
+        }
+        .name{
+            background: url(../images/icon-name.png) no-repeat;
+            background-size: 20/@rem 20/@rem;
+            background-position: left 0.1rem;
+        }
+        .phone{
+            background: url(../images/icon-phone.png) no-repeat;
+            background-size: 20/@rem 20/@rem;
+            background-position: left 0.1rem;
+        }
+        .time{
+            background: url(../images/icon-time.png) no-repeat;
+            background-size: 20/@rem 20/@rem;
+            background-position: left 0.1rem;
+        }
+        .btn-grounp{
+            border-top: 1px solid @border-color;
+            margin-top: 15/@rem;
+            padding-top: 20/@rem;
+            text-align: right;
+            .btn{
+                display: inline-block;
+                width: 160/@rem;
+                height: 60/@rem;
+                line-height: 60/@rem;
+                border: 1px solid @border-color;
+                text-align: center;
+                box-sizing: border-box;
+                border-radius: 40px;
+                font-size: 24/@rem;
+                color: #333;
+                &:first-child{
+                    margin-right: 10/@rem;
+                }
+                &:active{
+                    -webkit-box-shadow: 0 1px 5px rgba(6,0,1,.2);
+                    box-shadow: 0 1px 5px rgba(6,0,1,.2);
+                    background-image: -webkit-linear-gradient(left, #d32e12, #f83f20);
+                    background-image: linear-gradient(to right, #d32e12, #f83f20);
+                    color: #fff;
+                }
+            }
+        }
+    }
+}

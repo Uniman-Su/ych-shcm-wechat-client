@@ -1,0 +1,246 @@
+@import './common.less';
+body{
+    background: #f2f4f5;
+}
+.icon-my{
+    display: inline-block;
+    width: 36/@rem;
+    height: 36/@rem;
+    overflow: hidden;
+    vertical-align: middle;
+    background: url(../images/my.png) no-repeat;
+    background-size: 100% 100%;
+}
+.icon-bmy{
+    display: inline-block;
+    width: 36/@rem;
+    height: 36/@rem;
+    overflow: hidden;
+    vertical-align: middle;
+    background: url(../images/bmy.png) no-repeat;
+    background-size: 100% 100%;
+}
+.car-info{
+    height: 71/@rem;
+    padding: 22/@rem 31/@rem;
+    background: #f1f2f8;
+    border-bottom: 1px solid @border-color;
+    .car-info-pic{
+        display: inline-block;
+        width: 49/@rem;
+        height: 49/@rem;
+        padding: 10/@rem;
+        background: #fff;
+        border: 1px solid @border-color;
+        border-radius: 50%;
+        overflow: hidden;
+        float: left;
+    }
+    .car-info-main{
+        margin-left: 84/@rem;
+        height: 100%;
+        .car-info-title{
+            font-size: 26/@rem;
+            color: #333;
+            .ellipsis();
+        }
+        .car-info-text{
+            font-size: 22/@rem;
+            color: #999;
+            margin-top: 10/@rem;
+            .ellipsis();
+        }
+    }
+}
+.service-price{
+    padding-bottom: 80/@rem;
+    .total-price{
+        padding: 0 30/@rem;
+        height: 80/@rem;
+        line-height: 80/@rem;
+        background: #f2f4f5;
+        font-size: 26/@rem;
+        color: #d32e12;
+        text-align: right;
+    }
+    .price-details-list{
+        height: 80/@rem;
+        line-height: 80/@rem;
+        box-sizing: border-box;
+        padding: 0 30/@rem;
+        border-bottom: 1px solid @border-color;
+        font-size: 24/@rem;
+        color: #333;
+        background: #fff;
+        .price-icon{
+            display: inline-block;
+            overflow: hidden;
+            vertical-align: middle;
+            margin-top: -5/@rem;
+            margin-right: 10/@rem;
+            width: 20/@rem;
+        }
+        span{
+            float: left;
+        }
+    }
+    .time-details-list{
+        height: 80/@rem;
+        line-height: 80/@rem;
+        box-sizing: border-box;
+        padding: 0 30/@rem;
+        border-bottom: 1px solid @border-color;
+        font-size: 24/@rem;
+        color: #333;
+        background: #fff;
+        &:last-child{
+            border: none;
+        }
+    }
+}
+.kp-foot{
+    position: fixed;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    height: 80/@rem;
+    z-index: 99;
+    background-color: #fff;
+    -webkit-box-shadow: 1px 0 5px rgba(6,0,1,.2);
+    box-shadow: 1px 0 5px rgba(6,0,1,.2);
+    .kp-btn{
+        display: inline-block;
+        float: left;
+        width: 50%;
+        line-height: 80/@rem;
+        text-align: center;
+        font-size: 30/@rem;
+        &.btn1{
+            color: #D32E12;
+        }
+        &.btn2{
+            color: #fff;
+            background-image: -webkit-linear-gradient(left, #d32e12, #f83f20);
+            background-image: linear-gradient(to right, #d32e12, #f83f20);
+        }
+    }
+}
+.star-component{
+    float: right;
+    .star{
+        display: inline-block;
+        width: 35/@rem;
+        height: 35/@rem;
+        background: url(../images/icon-star.png) no-repeat;
+        background-size: 100% 100%;
+        vertical-align: middle;
+        margin-right: 5/@rem ;
+        &:last-child{
+            margin-right: 0;
+        }
+        &.active{
+            background: url(../images/icon-star1.png) no-repeat;
+            background-size: 100% 100%;
+        }
+    }
+}
+.comments-container{
+    background-color: #fff;
+    margin-bottom: 20/@rem;
+    &>ul{
+        padding: 30/@rem;
+    }
+    .coments-list{
+        line-height: 70/@rem;
+        font-size: 28/@rem;
+        color: #666;
+        .fr{
+            .fr-list{
+                float: left;
+                font-size: 26/@rem;
+                color: #666;
+                i{
+                    margin-left: 20/@rem;
+                    margin-right: -5/@rem;
+                }
+                &.active{
+                    span{
+                        color: #fba858;
+                    }
+                    .icon-my{
+                        background: url(../images/my1.png) no-repeat;
+                        background-size: 100% 100%;
+                    }
+                    .icon-bmy{
+                        background: url(../images/bmy1.png) no-repeat;
+                        background-size: 100% 100%;
+                    }
+                } 
+            }
+        }
+    }
+    .comments-text{
+        display: block;
+        width: 100%;
+        height: 216/@rem;
+        padding: 30/@rem;
+        font-size: 26/@rem;
+        color: #333;
+        border: none;
+        border-top: 1px solid @border-color;
+        border-bottom: 1px solid @border-color;
+        box-sizing: border-box;
+    }
+    .price-pay-btn-content{
+        padding: 30/@rem;
+        text-align: right;
+        .price-pay-btn{
+            display: inline-block;
+            width: 180/@rem;
+            height: 60/@rem;
+            line-height: 60/@rem;
+            text-align: center;
+            border-radius: 50px;
+            box-sizing: border-box;
+            font-size: 24/@rem;
+            &.btn1{
+                border: 1px solid #D32E12;
+                color: #D32E12;
+                margin-right: 20/@rem;
+                background: #fff;
+            }
+            &.btn2{
+                color: #fff;
+                background-image: -webkit-linear-gradient(left, #d32e12, #f83f20);
+                background-image: linear-gradient(to right, #d32e12, #f83f20);
+            }
+        }
+    }
+}
+.store-list{
+    position: relative;
+    padding: 30/@rem;
+    height: auto;
+    border-radius: 5px;
+    background: #fff;
+    border-bottom: 1px solid @border-color;
+    .store-list-pic{
+        float: left;
+        width: 110/@rem;
+        height: 88/@rem;
+    }
+    .store-list-info{
+        margin-left: 125/@rem;
+        .store-list-text{
+            font-size: 22/@rem;
+            line-height: 32/@rem;
+            color: #999;
+            .ellipsis2();
+        }
+        .title{
+            margin-bottom: 5/@rem;
+            .ellipsis();
+        }
+    }
+}
+

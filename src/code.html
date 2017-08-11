@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no">
+		<meta name="apple-mobile-web-app-capable" content="yes" />
+		<meta name="apple-mobile-web-app-status-bar-style" content="black" />
+		<meta name="format-detection" content="telephone=no, email=no" />
+		<title>订单详情</title>
+	</head>
+	<body>
+		<header class="car-info">
+			<div class="car-info-container clear">
+				<img class="car-info-pic" src="" />
+				<div class="car-info-main">
+					<h3 class="car-info-title"></h3>
+					<p class="car-info-text"></p>
+				</div>
+			</div>
+		</header>
+		<div class="code-container">
+			<h3 class="code-title">到汽修厂提供二维码即可享受服务</h3>
+			<div id="code"></div>
+			<!--<img class="code-img" src="images/code.png" alt="code" />-->
+			<a class="code-btn" href="javascript:;" ><i class="icon-store"></i>查看服务门店</a>
+		</div>
+		<div class="service-price">
+			<ul class="time-details">
+				<li id="createTime" class="time-details-list">
+					购买时间
+					<span class="fr"></span>
+				</li>
+				<li id="modifyTime" class="time-details-list">
+					服务时间
+					<span class="fr"></span>
+				</li>
+				<li class="time-details-list">
+					状态
+					<span id="status" class="fr"></span>
+				</li>
+			</ul>
+			<h3 class="total-price">套餐价: <span class="price-logo">&yen;</span><span id="money"></span></h3>
+			<ul class="price-details">
+			</ul>
+			<div class="price-pay-btn-content">
+				<a class="price-pay-btn btn1" href="javascript:;" >取消订单</a>
+			</div>
+		</div>	
+		
+		<div class="dialog">
+			<div class="pay-dialog-content">
+				<div class="pay-dialog-title">
+					提示
+					<a class="icon-close" href="javascript:;" ></a>
+				</div>	
+				<div class="pay-dialog-main">
+					<img class="pay-dialog-pic" src="images/msg.png" />
+					<p class="pay-main-info">请确认是否需要取消订单？</p>
+					<div class="pay-dialog-btn-group">
+						<a class="pay-dialog-btn btn1">再看看</a>
+						<a id="cancel" class="pay-dialog-btn btn2">是</a>
+					</div>	
+				</div>	
+			</div>	
+		</div>
+	</body>
+	<script src="js/qrcode.js"></script>
+	<script>
+		function GetQueryString(name) {
+			var reg = new RegExp("(^|&)" + name + "=([^&]*)(&|$)");
+			var r = window.location.search.substr(1).match(reg);
+			if(r != null) return unescape(r[2]);
+			return null;
+		}
+		var orderId = GetQueryString('id');
+		var qrcode = new QRCode(document.getElementById("code"), {
+			text: orderId,
+			width : 120,
+			height : 120
+		});
+	</script>
+</html>

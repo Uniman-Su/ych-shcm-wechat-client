@@ -1,0 +1,181 @@
+@import './common.less';
+.car-info{
+    height: 71/@rem;
+    padding: 22/@rem 31/@rem;
+    background: #f1f2f8;
+    border-bottom: 1px solid @border-color;
+    .car-info-container{
+        position: relative;
+        .icon-right{
+            position: absolute;
+            right: 0;
+            top: 25/@rem;
+        }
+    }
+    .car-info-pic{
+        display: inline-block;
+        width: 49/@rem;
+        height: 49/@rem;
+        padding: 10/@rem;
+        background: #fff;
+        border: 1px solid @border-color;
+        border-radius: 50%;
+        overflow: hidden;
+        float: left;
+    }
+    .car-info-main{
+        margin-left: 84/@rem;
+        height: 100%;
+        .car-info-title{
+            font-size: 26/@rem;
+            color: #333;
+            .ellipsis();
+        }
+        .car-info-text{
+            font-size: 22/@rem;
+            color: #999;
+            margin-top: 10/@rem;
+            .ellipsis();
+        }
+    }
+}
+.service-container{
+    padding-bottom: 80/@rem;
+}
+.service-nav-container{
+    ul{
+        padding: 15/@rem 10/@rem;
+        padding-right: 30/@rem;
+        height: 60/@rem;
+        white-space: nowrap;
+        overflow-x:scroll;
+        overflow-y:hidden;
+        -webkit-overflow-scrolling:touch;
+        &::-webkit-scrollbar {
+            display: none;
+        }
+        .service-nav-list{
+            display: inline-block;
+            padding: 0 30/@rem;
+            height: 60/@rem;
+            line-height: 54/@rem;
+            margin-left: 20/@rem;
+            border-radius: 50px;
+            font-size: 26/@rem;
+            color: #333;
+            box-sizing: border-box;
+            background: #f9f9f9;
+            text-align: center;
+            border: 1px solid @border-color;
+            cursor: pointer;
+            &.active{
+                color: #d32e12;
+                border-color: #d32e12;
+                background: #fff1ef;
+            }
+        }
+    }
+}
+.service-banner{
+    padding: 30/@rem 30/@rem;
+//  height: 160/@rem;
+//  background: url(../images/service-banner.jpg) no-repeat;
+//  background-size: 100% 100%;
+//  color: #fff;
+//  .banner-title{
+//      font-size: 30/@rem;
+//  }
+//  .banner-fg{
+//      position: relative;
+//      width: 88/@rem;
+//      height: 1px;
+//      background: #8f8f8f;
+//      margin: 20/@rem 0;
+//      &:before{
+//          content: '';
+//          position: absolute;
+//          display: inline-block;
+//          height: 3px;
+//          width: 30/@rem;
+//          left: 29/@rem;
+//          top: -1px;
+//          background: #fff;
+//      }
+//  }
+//  .banner-text{
+//      width: 360/@rem;
+//      font-size: 20/@rem;
+//      line-height: 32/@rem;
+//  }
+}
+.service-cycle{
+    padding: 30/@rem;
+    .title{
+        font-size: 22/@rem;
+        line-height: 32/@rem;
+        color: #666;
+    }
+    .text{
+        font-size: 26/@rem;
+        line-height: 40/@rem;
+        color: #fba858;
+    }
+}
+.service-price{
+    .total-price{
+        padding: 0 30/@rem;
+        height: 80/@rem;
+        line-height: 80/@rem;
+        background: #f2f4f5;
+        font-size: 26/@rem;
+        color: #d32e12;
+        text-align: right;
+    }
+    .price-details-list{
+        height: 80/@rem;
+        line-height: 80/@rem;
+        box-sizing: border-box;
+        padding: 0 30/@rem;
+        border-bottom: 1px solid @border-color;
+        font-size: 24/@rem;
+        color: #333;
+        .price-icon{
+            display: inline-block;
+            overflow: hidden;
+            vertical-align: middle;
+            margin-top: -5/@rem;
+            margin-right: 10/@rem;
+            width: 20/@rem;
+        }
+        span{
+            float: left;
+        }
+    }
+    .price-details-info{
+        padding: 30/@rem;
+        font-size: 26/@rem;
+        line-height: 36/@rem;
+        color: #666;
+    }
+}
+.next-foot{
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    z-index: 999;
+    height: 80/@rem;
+    line-height: 80/@rem;
+    text-align: center;
+    font-size: 30/@rem;
+    color: #fff;
+    background-image: -webkit-linear-gradient(left, #d32e12, #f83f20);
+    background-image: linear-gradient(to right, #d32e12, #f83f20);
+    &.active{
+        background: #eeeeee;
+    }
+    a{
+        display: block;
+        color: #fff;
+    }
+}

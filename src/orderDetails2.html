@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no">
+		<meta name="apple-mobile-web-app-capable" content="yes" />
+		<meta name="apple-mobile-web-app-status-bar-style" content="black" />
+		<meta name="format-detection" content="telephone=no, email=no" />
+		<title>订单详情</title>
+	</head>
+	<body>
+		<header class="car-info">
+			<div class="car-info-container clear">
+				<img class="car-info-pic" src="" />
+				<div class="car-info-main">
+					<h3 class="car-info-title"></h3>
+					<p class="car-info-text"></p>
+				</div>
+			</div>
+		</header>
+		<footer class="kp-foot">
+			<a id="kp-btn" class="kp-btn btn1" href="javascript:;">开票申请</a>
+			<a id="submit" class="kp-btn btn2" href="javascript:;">提交</a>
+		</footer>
+		<div class="store-list">
+			<div class="store-content clear">
+				<img id="imagePath" class="store-list-pic" src="" />
+				<div class="store-list-info">
+					<h3 id="name" class="title"></h3>
+					<p id="address" class="store-list-text"></p>
+				</div>
+			</div>
+		</div>
+		<div class="comments-container">
+			<ul>
+				<li class="coments-list">
+					服务态度
+					<span class="star-component">
+						<span class="star active"></span>
+						<span class="star active"></span>
+						<span class="star active"></span>
+						<span class="star active"></span>
+						<span class="star active"></span>
+					</span>
+				</li>
+				<li class="coments-list">
+					技术能力
+					<span class="star-component">
+						<span class="star active"></span>
+						<span class="star active"></span>
+						<span class="star active"></span>
+						<span class="star active"></span>
+						<span class="star active"></span>
+					</span>
+				</li>
+				<li class="coments-list">
+					店面环境
+					<span class="star-component">
+						<span class="star active"></span>
+						<span class="star active"></span>
+						<span class="star active"></span>
+						<span class="star active"></span>
+						<span class="star active"></span>
+					</span>
+				</li>
+				<li class="coments-list">
+					服务效率
+					<span class="star-component">
+						<span class="star active"></span>
+						<span class="star active"></span>
+						<span class="star active"></span>
+						<span class="star active"></span>
+						<span class="star active"></span>
+					</span>
+				</li>
+				<li class="coments-list">
+					总体评价
+					<ul id="type" class="fr">
+						<li class="fr-list active">
+							<i class="icon-my"></i>
+							<span>满意</span>
+						</li>
+						<li class="fr-list">
+							<i class="icon-bmy"></i>
+							<span>不满意</span>
+						</li>
+					</ul>	
+				</li>
+			</ul>
+			<textarea id="content" class="comments-text" placeholder="请填写评价内容"></textarea>
+		</div>
+		<div class="service-price">
+			<ul class="time-details">
+				<li id="createTime" class="time-details-list">
+					购买时间
+					<span class="fr"></span>
+				</li>
+				<li id="modifyTime" class="time-details-list">
+					服务时间
+					<span class="fr"></span>
+				</li>
+				<li id="status" class="time-details-list">
+					状态
+					<span class="fr"></span>
+				</li>
+			</ul>
+			<h3 class="total-price">套餐价: <span class="price-logo">&yen;</span><span id="money"></span></h3>
+			<ul class="price-details">
+			</ul>
+		</div>	
+	</body>
+</html>
