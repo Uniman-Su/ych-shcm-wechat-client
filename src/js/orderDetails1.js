@@ -107,14 +107,14 @@ function loadShop(shopId){
 			var averageScore = data.averageScore;//评分
 			var evaluationCount = data.evaluationCount;//评价条数
 			var orderLink = 'storeDetails.html?id='+shopId+'&orderId='+orderId+'';
-			$('#order-link').attr('href',orderLink);
+			$('#store-link').attr('href',orderLink);
 			$('#name').text(data.name);
 			$('#address').text(data.address);
 			$('#imagePath').attr('src',data.imagePath);
-			for( var i=0; i<Math.floor(averageScore); i++){
+			for( var i=0; i<Math.round(averageScore); i++){
 				$('#star span').eq(i).addClass('active');
 			}
-			$('#score').text(averageScore+'分');
+			$('#score').text(averageScore.toFixed(1)+'分');
 			$('#comments').text(evaluationCount+'条评论');
 			loading.removeLoad();
 		}
