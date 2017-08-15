@@ -78,6 +78,7 @@ function load(carId){
 			$('.service-nav-list').not('.disable').eq(canChooseArr[0]).addClass('active');
 			//$('.service-cycle .text').text(firstdesc);
 			$('#desc').html(firstdesc);
+			$('#coment').html(comment);
 			
 		//console.log(data);
 		},
