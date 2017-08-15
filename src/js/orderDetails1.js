@@ -106,6 +106,8 @@ function loadShop(shopId){
 			var data = data.data;
 			var averageScore = data.averageScore;//评分
 			var evaluationCount = data.evaluationCount;//评价条数
+			var orderLink = 'storeDetails.html?id='+shopId+'&orderId='+orderId+'';
+			$('#order-link').attr('href',orderLink);
 			$('#name').text(data.name);
 			$('#address').text(data.address);
 			$('#imagePath').attr('src',data.imagePath);

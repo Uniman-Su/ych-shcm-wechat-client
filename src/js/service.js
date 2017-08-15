@@ -130,7 +130,9 @@ $(document).on('click','.service-nav-list',function(){
 	$(this).addClass('active').siblings().removeClass('active');
 	var packId = serviceData[_index].id;
 	var firstdesc = serviceData[_index].desc;
+	var comment = serviceData[_index].comment;
 	$('.service-cycle .text').text(firstdesc);
+	$('#comment').html(comment);
 	serviceLoad(packId);
 })
 
