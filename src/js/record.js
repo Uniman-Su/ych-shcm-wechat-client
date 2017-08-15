@@ -150,6 +150,7 @@ function getAllOrders(){
 	user.pageIndex = 0;
 	user.pageSize = 1000;
 	user.startIndex = 0;
+	user.status = ['UNPAYED','PAYED','SERVICED','CONFIRMED','EVALUATED','REFUNDED'];
 	user.userId = userId;
 	user = JSON.stringify(user);
 	var html = $('.record-nav-content-list').eq(0).find('ul').html();
