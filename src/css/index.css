@@ -401,3 +401,19 @@ body::-webkit-scrollbar {
   background-image: -webkit-linear-gradient(left, #d32e12, #f83f20);
   background-image: linear-gradient(to right, #d32e12, #f83f20);
 }
+.tutorial-link a {
+  font-size: 0.6rem;
+  color: #666;
+  text-align: center;
+  display: block;
+  margin-bottom: 0.5rem;
+}
+.tutorial-link a .tuto-icon {
+  display: inline-block;
+  width: 0.55rem;
+  height: 0.55rem;
+  vertical-align: middle;
+  margin-right: 0.125rem;
+  background: url(../images/tuto.png) no-repeat;
+  background-size: 100% 100%;
+}

@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no">
+		<meta name="apple-mobile-web-app-capable" content="yes" />
+		<meta name="apple-mobile-web-app-status-bar-style" content="black" />
+		<meta name="format-detection" content="telephone=no, email=no" />
+		<title>流程说明</title>
+		<script>
+			function setFontSize(){
+				var html =  document.documentElement;
+				var width = html.getBoundingClientRect().width;
+				html.style.fontSize = width / 16 +'px';
+			}
+			setFontSize();
+			window.onresize = function(){
+				setFontSize();
+			}	
+		</script>
+		<style>
+			html,body{
+				height: 100%;
+				overflow: hidden;
+				background-color: #edf1ef;
+			}
+			.tutorial-container{
+				display: none;
+				position: absolute;
+				left: 0;
+				right: 0;
+				top: 0;
+				bottom: 0;
+				overflow: hidden;
+			}
+			.container{
+				position: absolute;
+				left: 50%;
+				top: 50%;
+				transform: translate3d(-50%,-50%,0);
+				-webkit-transform: translate3d(-50%,-50%,0);
+			}
+			.tutorial-container img{
+				width: 13.5rem;
+				height: 24rem;
+			}
+			.tutorial-container .pointer{
+				display: inline-block;
+				position: absolute;
+				width: 1.5rem;
+				height: 1.15rem;
+				background: url(images/pointer.png) no-repeat;
+				background-size: 100% 100%;
+				animation-delay: 1000ms;
+				-webkit-animation-delay: 1000ms;
+			}
+			.tutorial-container:nth-child(2) .pointer{
+				bottom: 2.25rem;
+				right: 3rem;
+			}
+			.tutorial-container:nth-child(3) .pointer{
+				top: 6.3rem;
+				left: 4.5rem;
+			}
+			.tutorial-container:nth-child(4) .pointer{
+				bottom: 0.25rem;
+				right: 3.35rem;
+			}
+			.tutorial-container:nth-child(5) .pointer{
+				top: 12.55rem;
+				right: 5.55rem;
+			}
+			.tutorial-container:nth-child(6) .pointer{
+				top: 13.6rem;
+				right: 5.25rem;
+			}
+			.tutorial-container:nth-child(8) .pointer{
+				top: 10.22rem;
+				right: 5.55rem;
+			}
+			.tutorial-container:nth-child(9) .pointer{
+				bottom: 0.25rem;
+				right: 3.5rem;
+			}
+			.tutorial-container:nth-child(10) .pointer{
+				top: 9.7rem;
+				right: 1.45rem;
+			}
+			.tutorial-container:nth-child(12) .pointer{
+				bottom: 0.25rem;
+				right: 0.5rem;
+			}
+			.tutorial-container .btn{
+				display: inline-block;
+				position: absolute;
+				width: 3.5rem;
+				height: 1.5rem;
+				left: 2.9rem;
+				bottom: 7.5rem;
+			}
+			.tutorial-container .btn:last-child{
+				left: 6.85rem;
+			}
+		</style>
+	</head>
+	<body>
+		<div style="display: block;" class="tutorial-container animated slideInRight">
+			<div class="container">
+				<img src="images/tutorial1.jpg" />
+			</div>
+		</div>
+		<div class="tutorial-container animated slideInRight">
+			<div class="container">
+				<img src="images/tutorial2.jpg" />
+				<a class="pointer animated flash" href="javascript:;"></a>
+			</div>
+		</div>
+		<div class="tutorial-container animated slideInRight">
+			<div class="container">
+				<img src="images/tutorial3.jpg" />
+				<a class="pointer animated flash" href="javascript:;"></a>
+			</div>
+		</div>
+		<div class="tutorial-container animated slideInRight">
+			<div class="container">
+				<img src="images/tutorial4.jpg" />
+				<a class="pointer animated flash" href="javascript:;"></a>
+			</div>
+		</div>
+		<div class="tutorial-container animated slideInRight">
+			<div class="container">
+				<img src="images/tutorial5.jpg" />
+				<a class="pointer animated flash" href="javascript:;"></a>
+			</div>
+		</div>
+		<div class="tutorial-container animated slideInRight">
+			<div class="container">
+				<img src="images/tutorial6.jpg" />
+				<a class="pointer animated flash" href="javascript:;"></a>
+			</div>
+		</div>
+		<div class="tutorial-container animated slideInRight">
+			<div class="container">
+				<img src="images/tutorial7.jpg" />
+			</div>
+		</div>
+		<div class="tutorial-container animated slideInRight">
+			<div class="container">
+				<img src="images/tutorial8.jpg" />
+				<a class="pointer animated flash" href="javascript:;"></a>
+			</div>
+		</div>
+		<div class="tutorial-container animated slideInRight">
+			<div class="container">
+				<img src="images/tutorial9.jpg" />
+				<a class="pointer animated flash" href="javascript:;"></a>
+			</div>
+		</div>
+		<div class="tutorial-container animated slideInRight">
+			<div class="container">
+				<img src="images/tutorial10.jpg" />
+				<a class="pointer animated flash" href="javascript:;"></a>
+			</div>
+		</div>
+		<div class="tutorial-container animated slideInRight">
+			<div class="container">
+				<img src="images/tutorial11.jpg" />
+			</div>
+		</div>
+		<div class="tutorial-container animated slideInRight">
+			<div class="container">
+				<img src="images/tutorial12.jpg" />
+				<a class="pointer animated flash" href="javascript:;"></a>
+			</div>
+		</div>
+		<div class="tutorial-container animated slideInRight">
+			<div class="container">
+				<img src="images/tutorial13.jpg" />
+				<a id="agin" class="btn" href="javascript:;"></a>
+				<a class="btn" href="index.html"></a>
+			</div>
+		</div>	
+	</body>
+</html>
