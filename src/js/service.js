@@ -59,24 +59,27 @@ function load(carId){
 		dataType:"json",
 		success:function(data){
 			serviceData = data.data;
-			var canChooseArr = [];
+			//var canChooseArr = [];
+			var selected = 0;
 			var list='';
 			$(serviceData).each(function(index,item){
+				if(item.selected == true){
+					selected = index;
+				}
 				if( item.canChoose == true){
-					canChooseArr.push(index);
+					//canChooseArr.push(index);
 					list+='<li data-id='+item.id+' class="service-nav-list">'+item.alias+'</li>';
 				}else{
 					list+='<li data-id='+item.id+' class="service-nav-list disable">'+item.alias+'</li>';
 				}
 				
 			})	
-			var packId = serviceData[canChooseArr[0]].id;
-			var firstdesc = serviceData[canChooseArr[0]].desc;
-			var comment = serviceData[canChooseArr[0]].comment;
+			var packId = serviceData[selected].id;
+			var firstdesc = serviceData[selected].desc;
+			var comment = serviceData[selected].comment;
 			serviceLoad(packId);
 			$('.service-nav-container ul').append(list);
-			$('.service-nav-list').not('.disable').eq(canChooseArr[0]).addClass('active');
-			//$('.service-cycle .text').text(firstdesc);
+			$('.service-nav-list').eq(selected).addClass('active');
 			$('#desc').html(firstdesc);
 			$('#comment').html(comment);
 			
@@ -152,7 +155,7 @@ $('.next-foot a').click(function(){
 		var obj = {};
 		obj.id = Number(id);
 		packsArr.push(obj);
-		console.log(obj.id);
+		//console.log(obj.id);
 	})
 	createOrderRequest.carId = carId;
 	createOrderRequest.packs = packsArr;
