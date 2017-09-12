@@ -110,8 +110,7 @@ function serviceLoad(packId){
 			$(items).each(function(index,item){
 				list+='<li class="price-details-list"><img class="price-icon" src="'+item.iconPath+'" />'+item.name+'</li>';
 			})
-			$('.price-details').html('');
-			$('.price-details').append(list);
+			$('.price-details').html(list);
 			$('#price').text(price);
 			loading.removeLoad();
 			//console.log(data);
@@ -134,7 +133,7 @@ $(document).on('click','.service-nav-list',function(){
 	var packId = serviceData[_index].id;
 	var firstdesc = serviceData[_index].desc;
 	var comment = serviceData[_index].comment;
-	$('.service-cycle .text').text(firstdesc);
+	$('#desc').html(firstdesc);
 	$('#comment').html(comment);
 	serviceLoad(packId);
 })
